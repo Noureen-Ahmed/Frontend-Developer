@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent1 .child .title {
+            color: red;
+        }
+        .parent1 .title {
+            color: blue;
+        }
+        .parent1 p {
+            color: green;
+        }
+        .title{
+            color: green;
+        }
+        .title ,
+        .parent1 p  {
+            color: green;
+        }
+        .a16 {
+            display: block;
+            max-width: 400px;
+            width: fit-content;
+            background-color: brown;
+            text-transform: capitalize;
+            color: aliceblue;
+            padding: 20px;
+            overflow: hidden;
+        
+        }
+    </style>
+</head>
+    <body>
+        <div class="parent1">
+            <div class="child">This Is Child <span class="title">Title</span></div>
+            <span class="title">Child Title</span>
+            <p>Paragraph Content</p>
+        </div>
+        <div class="title">Section Title</div>
+        <div class="a16">title one </div> <br>
+        <div class="a16">title two with more words</div><br>
+        <div class="a16">title three with many many many words</div><br>
+        <div class="a16">title three with many many many words title three with many many many words title three with many many many words title three with many many many words title three with many many many words</div>
+    </body>
+</html>

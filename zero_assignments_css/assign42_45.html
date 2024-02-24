@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.a1parent{
+    width: 600px;
+    background-color: #eee;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    padding: 20px;
+    text-align: center;
+    margin: 80px auto;
+    transition: margin-top 0.5s 0s  ease-in;
+}
+.a1{
+    background-color: #ddd;
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+    border-left:4px #c8c3c3ee solid ;
+    transition-delay: 0.5s;
+    transition:margin-top 0.5s 0.5s ease-in;
+}
+.a1parent:hover{
+    margin-top: 0px;
+}
+.a1:hover{
+    margin-top: 50px;
+}  
+.a2{
+    width: 400px;
+    margin: 80px auto;
+    font-size: 20px !important;
+    background-color: #eee !important;
+    color: black !important;
+    font-family: sans-serif;
+    text-align: center;
+    text-indent: 150%;
+    white-space: nowrap;
+    overflow: hidden;
+    border: none !important;
+    position: relative;
+    font-weight: bold;
+}
+.a2::before{
+    content: "Elzero";
+    color: black;
+    position: absolute;
+    width: 100px;
+    left: 10%;
+} 
+:root {
+    --mainColor: rgb(0, 150, 136);
+    --mainPadding: 10px;
+    --mainborder: 2px  rgb(0, 150, 136) solid;
+} 
+.a3 {
+    color: var(--mainColor ,red);
+    padding: var(--mainPadding , 10px);
+    margin: 80px auto;
+    border:var(--mainborder, 2px black solid);
+    margin: 10px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+} 
+    </style>
+</head>
+    <body>
+        <div class="a1parent">
+            will go up on hover in half second
+            <div class="a1">will go down after a half second</div>
+        </div> 
+        <div class="a2" style="
+            background-color: red;
+            color: white;
+            padding: 20px;
+            border: 1px solid blue;
+            font-size: 80px;">
+            Hello Div
+        </div>
+        <div class="a3">Element</div>
+        <div  class="a3">Element</div>
+        <div  class="a3">Element</div>
+    </body>
+</html>

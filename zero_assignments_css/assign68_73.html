@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --maincolor:#ff5100;
+        }
+.a1 {
+    width: 150px;
+    height: 75px;
+    margin:200px auto;
+    background-color:var(--maincolor);
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+}
+.a1::before {
+    content: " ";
+    width: 97px;
+    height: 0px;
+    border: 46px transparent solid;
+    border-right: 62px #ff5100 solid;
+    border-left: 62px #ff5100 solid;
+    transform: translate(100px,100px);
+    transform: rotate(15deg);
+}
+/* .a1::after {
+    content: " ";
+    width: 97px;
+    height: 0px;
+    border: 46px transparent solid;
+    border-right: 62px #ff5100 solid;
+    position: absolute;
+    top: -98px;
+    left: 74px;
+    transform: rotate(128deg);
+} */
+    </style>
+</head>
+<body>
+    <div class="assign">
+        <h1 class="a1">Elzero</h1> 
+
+    </div>
+</body>
+</html>

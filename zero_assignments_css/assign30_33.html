@@ -1,0 +1,316 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .green {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            left: 20px;
+            top: 20px;
+            background-color: rgb(6, 136, 110);
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            z-index: 4;
+        }
+        .red {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            left: 20px;
+            top: 20px;
+            background-color: rgb(234, 58, 31);
+            position: absolute;
+            left: 30px;
+            top: 40px;
+            z-index: 4;
+        }
+        .blue {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            left: 20px;
+            top: 20px;
+            background-color: rgb(19, 173, 235);
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            z-index: 2;
+        }
+        .black {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            left: 20px;
+            top: 20px;
+            background-color: black;
+            position: absolute;
+            left: 10px;
+            top: 20px;
+            z-index: 1;
+        } 
+        .a31 {
+            width: 400px;
+            background-color: #eee;
+            font-family:  sans-serif;
+            margin-left: 200px;
+            text-align: center;
+            padding: 15px;
+            line-height: 1.7;
+            border-color: red #1785f4  ;
+            border-style: solid;
+            margin: 100px;
+        }
+        .top-left {
+            position: relative;
+            background-color: #1785f4;
+            color: aliceblue;
+            border-right: 3px red solid;
+            height: 28px;
+            width: 40px;
+            display: inline-block;
+            right: 144px;
+            bottom: 139px;
+        }
+        .bottom-left{
+            background-color: rgb(23, 133, 244);
+            color: aliceblue;
+            border-right: 3px red solid;
+            height: 28px;
+            width: 40px;
+            display: inline-block;
+            position: relative;
+            right: 196px;
+            top: 29px;
+        }
+        .top-right {
+            position: relative;
+            left: 190px;
+            bottom: 138px;
+            background-color: rgb(23, 133, 244);
+            color: aliceblue;
+            border-left: 3px red solid;
+            height: 28px;
+            width: 40px;
+            display: inline-block;
+        }
+        .bottom-right {
+            background-color: rgb(23, 133, 244);
+            color: aliceblue;
+            border-left: 3px red solid;
+            height: 28px;
+            width: 40px;
+            display: inline-block;
+            position: relative;
+            left: 144px;
+            top: 30px;
+        } 
+        ul {
+            width: 400px;
+            background-color: #eee;
+            font-family:  sans-serif;
+            list-style: none;
+            margin: 15px;
+            padding: 10px;
+        }
+        .n1 {
+            width: 360px;
+            background-color: #eee;
+            font-family:  sans-serif;
+            height: 150px;
+        }
+        .n2 {
+            width: 360px;
+            background-color: #eee;
+            font-family:  sans-serif;
+            height: 150px;
+        }
+        ol li {
+            background-color:white;
+            margin: 10px;
+            padding: 10px;
+        }
+        .nn {
+            list-style:circle ;
+            width: 350px;
+            background-color: #eee;
+            font-family:  sans-serif;
+        }
+        .nn li {
+            background-color:white;
+            margin: 5px;
+            padding: 7px;
+        
+        } 
+        table{
+            text-align: center;
+            font-family: sans-serif;
+            text-transform: capitalize;
+            width: 700px;
+            margin: auto;
+            padding-left: 15px;
+            border-bottom:3px rgb(41, 118, 116) solid ;
+        }
+        caption{
+            font-weight: bold;
+            font-family:sans-serif;
+            margin: 15px;
+        }
+        img{
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+        }
+        
+        tr td {
+                background-color: #eee;
+                padding: 20px;
+            }
+        .vv {
+            color: aliceblue;
+            font-family: sans-serif;
+            text-align: center;
+            background-color: rgb(20, 173, 233);
+            padding: 5px;
+            font-size: 12px;
+            font-weight: 700;
+            display: inline-block;
+            width: 40px;
+            height: 15px;
+        }
+        .dd{
+            color: aliceblue;
+            font-family: sans-serif;
+            text-align: center;
+            background-color: rgb(235, 11, 108);
+            padding: 5px;
+            font-size: 12px;
+            font-weight: 700;
+            display: inline-block;
+            width: 50px;
+            height: 15px;
+        }
+        thead th{
+            background-color: rgb(55, 55, 55);
+            color: aliceblue;
+            padding: 10px;
+        }
+    </style>
+</head>
+    <body>
+            <div class="green"></div>
+            <div class="red"></div>
+            <div class="black"></div>
+            <div class="blue"></div> 
+            <pre>
+
+
+
+            </pre>
+            <div class="a31">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, sed. Ea ipsum
+            similique quasi rem, fugiat voluptatibus reiciendis nam debitis earum quo veniam
+            laudantium mollitia atque! Laborum ea nam doloribus.
+            <span class="top-left">1</span>
+            <span class="bottom-left">2</span>
+            <span class="top-right">3</span>
+            <span class="bottom-right">4</span>
+        </div>
+        <ul class="a32">
+            <li>
+            HTML
+            <ol start="10" class="n1" >
+                <li>Slim</li>
+                <li>Pugjs</li>
+                <li>HAML</li>
+            </ol>
+            </li>
+            <li>
+            CSS
+            <ol class="n2" start="10" type="I" >
+                <li>SASS</li>
+                <li>LESS</li>
+                <li>PostCSS</li>
+            </ol>
+            </li>
+            <li>
+            JavaScript
+            <ul class="nn">
+                <li>Vuejs</li>
+                <li>Sveltejs</li>
+            </ul>
+            </li>
+        </ul> 
+        <table>
+            <caption>developers rating</caption>
+            <thead>
+                <th>avatar</th>
+                <th>group</th>
+                <th>name</th>
+                <th>points</th>
+                <th>control</th>
+            </thead>
+            <tr>
+                <td><img src="665e9421-6df9-4e62-8ebe-1a72b6b0948d.jpeg" alt=""></td>
+                <td>ninja</td>
+                <td>ahmed mohamed</td>
+                <td>120</td>
+                <td>
+                    <span class="vv">view</span>
+                    <span class="dd">delete</span>
+                </td>
+            </tr>
+            <tr>
+                <td ><img src="665e9421-6df9-4e62-8ebe-1a72b6b0948d.jpeg" alt=""></td>
+                <td rowspan="2">shades</td>
+                <td>shady nabil</td>
+                <td>180</td>
+                <td>
+                    <span class="vv">view</span>
+                    <span class="dd">delete</span>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="Chibi Elsa by Iksia on DeviantArt.jpeg" alt=""></td>
+                <td >eman mohamed</td>
+                <td>160</td>
+                <td>
+                    <span class="vv">view</span>
+                    <span class="dd">delete</span>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="665e9421-6df9-4e62-8ebe-1a72b6b0948d.jpeg" alt=""></td>
+                <td rowspan="2">valhala</td>
+                <td>mohamed ibrahim</td>
+                <td>190</td>
+                <td>
+                    <span class="vv">view</span>
+                    <span class="dd">delete</span>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="Chibi Elsa by Iksia on DeviantArt.jpeg"  alt=""></td>
+                <td>noor atef</td>
+                <td>110</td>
+                <td>
+                    <span class="vv">view</span>
+                    <span class="dd">delete</span>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="665e9421-6df9-4e62-8ebe-1a72b6b0948d.jpeg" alt=""></td>
+                <td>union</td>
+                <td >mahmoud adel</td>
+                <td>90</td>
+                <td>
+                    <span class="vv">view</span>
+                    <span class="dd">delete</span>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html> 
