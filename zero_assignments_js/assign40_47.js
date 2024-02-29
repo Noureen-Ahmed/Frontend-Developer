@@ -1,14 +1,21 @@
 // ASSIGN 1
 let myFriends = ["Ahmed", "Elham", "Osama", "Gamal"];
 let num = 3;
-// Method 1
 console.log(myFriends.slice(length-++num,--num));
 // Method 2
 myFriends.pop();
 console.log(myFriends); 
 // Method 3
-myFriends.splice(num,1);
+myFriends.splice(num,true);
 console.log(myFriends);
+// method 4
+myFriends.slice(myFriends.indexOf("Ahmed"))
+console.log(myFriends);
+// method 5
+myFriends.splice(num);
+console.log(myFriends);
+// method 6
+console.log(myFriends.slice( -myFriends.lastIndexOf("Gamal") - true , num )); 
 // output :  ["Ahmed", "Elham", "Osama"];
 // ASSIGN 2
 let friends = ["Ahmed", "Eman", "Osama", "Gamal"];
